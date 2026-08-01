@@ -53,8 +53,8 @@ async function trySendProactive(chatId: string): Promise<boolean> {
     console.log(`[proactive] ${chat.characterName} → 主动消息已发送 (${chatId.slice(0, 8)}…)`);
     const preview = content.replace(/\s+/g, " ").trim().slice(0, 100);
     void sendWebPushToAll({
-      // iOS PWA 固定插一行「from 应用名」；标题再写 WE-E 会叠成两遍。
-      // 标题用零宽字符占位，视觉上就是：from WE-E → 角色：正文
+      // iOS PWA 固定插一行「from 应用名」；标题再写 Encore Flow 会叠成两遍。
+      // 标题用零宽字符占位，视觉上就是：from Encore Flow → 角色：正文
       title: "\u200b",
       body: `${chat.characterName || "角色"}：${preview || "点开看看"}`,
       url: `/chat/${chatId}`,

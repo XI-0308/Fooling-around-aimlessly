@@ -94,7 +94,7 @@ async function decideByLlm(
       : "现在是普通对话回合：可按需选用注册表中的工具。副作用工具（music/voice/image/shareImage）会在角色说完后执行。";
 
   const system =
-    `你是 WE-E 的隐形 Agent 决策器，不是角色扮演者。\n` +
+    `你是 Encore Flow 的隐形 Agent 决策器，不是角色扮演者。\n` +
     `用户叫「${userName}」，角色叫「${charName}」。\n` +
     `${modeHint}\n` +
     `可用工具：\n${formatRegistryForDecide(mode)}\n` +

@@ -9,13 +9,13 @@ import ThemeBootstrapScript from "@/components/ThemeBootstrapScript";
 import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 
 export const metadata: Metadata = {
-  title: "WE-E",
-  description: "WE-E · 角色扮演与 Agent 扩展",
-  applicationName: "WE-E",
+  title: "Encore Flow",
+  description: "Encore Flow · 角色扮演与 Agent 扩展",
+  applicationName: "Encore Flow",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "WE-E",
+    title: "Encore Flow",
   },
   icons: {
     apple: [{ url: "/pwa-icon/180", sizes: "180x180" }],

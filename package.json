@@ -2,7 +2,7 @@
   "name": "rp-agent",
   "version": "0.1.0",
   "private": true,
-  "description": "WE-E — deep companionship for one character",
+  "description": "Encore Flow — deep companionship for one character",
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:web\"",
     "dev:web": "npm run dev --workspace=apps/web",

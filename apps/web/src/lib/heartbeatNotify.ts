@@ -119,7 +119,7 @@ export function showHeartbeatNotification(input: {
   if (!isHeartbeatNotifyEnabled()) return;
   if (Notification.permission !== "granted") return;
 
-  const title = "WE-E";
+  const title = "Encore Flow";
   const body = formatCharacterPreview(input.preview || "", input.characterName);
 
   try {

@@ -23,7 +23,7 @@ export default function GlobalError({
         }}
       >
         <div style={{ maxWidth: 360, width: "100%", textAlign: "center" }}>
-          <h1 style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>WE-E</h1>
+          <h1 style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>Encore Flow</h1>
           <p style={{ opacity: 0.85, marginBottom: "1rem" }}>
             {error.message || "页面出了点问题"}
           </p>

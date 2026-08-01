@@ -22,7 +22,7 @@ export default function Error({
       }}
     >
       <div style={{ maxWidth: 360, width: "100%" }}>
-        <h1 style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>WE-E</h1>
+        <h1 style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>Encore Flow</h1>
         <p style={{ opacity: 0.9, marginBottom: "1rem", lineHeight: 1.45 }}>
           {error.message || "页面加载出错了"}
         </p>

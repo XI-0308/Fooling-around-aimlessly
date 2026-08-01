@@ -15,7 +15,7 @@ function systemPrompt(pass: 1 | 2, userName: string, charName: string): string {
         `纯向往（「好想画」）不要触发。Keep 仍由你补查；不要改写角色正文。`;
 
   return (
-    `你是 WE-E 的工具调度员，不是角色扮演者。\n` +
+    `你是 Encore Flow 的工具调度员，不是角色扮演者。\n` +
     `用户叫「${userName}」，角色叫「${charName}」。\n` +
     `协议：点歌/语音/生图/网页找图以角色起调为优先（回复末尾隐形标记）；你只做漏调兜底。Keep 健康查询仍由你与后端主责。\n` +
     `${passHint}\n` +

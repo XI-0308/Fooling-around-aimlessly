@@ -24,7 +24,7 @@ export default function ColdBootSplash() {
     "text-align:center"
   ].join(";");
   root.innerHTML = [
-    '<div style="font-size:1.35rem;font-weight:700;letter-spacing:0.02em">WE-E</div>',
+    '<div style="font-size:1.35rem;font-weight:700;letter-spacing:0.02em">Encore Flow</div>',
     '<div id="ef-cold-boot-msg" style="font-size:0.95rem;opacity:0.9">正在打开…</div>'
   ].join("");
   document.documentElement.appendChild(root);

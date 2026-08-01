@@ -93,7 +93,7 @@ export function ProactiveUnreadProvider({ children }: { children: React.ReactNod
       const lastNotified = getLastNotifiedAt();
       if (lastNotified && latestAt <= lastNotified) return;
 
-      const title = "WE-E";
+      const title = "Encore Flow";
       const preview = formatCharacterPreview(top?.preview || "");
 
       const fire = () => {

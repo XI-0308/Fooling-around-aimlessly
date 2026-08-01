@@ -1,4 +1,4 @@
-/* WE-E · Web Push Service Worker
+/* Encore Flow · Web Push Service Worker
  * 锁屏 / 杀进程后仍可由系统推送通道唤醒并弹通知。
  */
 /* eslint-disable no-restricted-globals */

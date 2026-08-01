@@ -290,7 +290,7 @@ export default function ChatDecorateForm({ theme, onChange, onSave }: ChatDecora
             ))}
           </div>
           <h4 className="decorate-subsection-title">品牌字渐变</h4>
-          <p className="hint">侧栏与登录页「WE-E」标题的渐变三色，保存后立即生效。</p>
+          <p className="hint">侧栏与登录页「Encore Flow」标题的渐变三色，保存后立即生效。</p>
           <div className="bubble-color-grid">
             {CHAT_THEME_BRAND_COLOR_FIELDS.map(({ key, label }) => (
               <ColorPickerField

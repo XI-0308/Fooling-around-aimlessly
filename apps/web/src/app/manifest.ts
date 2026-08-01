@@ -3,9 +3,9 @@ import type { MetadataRoute } from "next";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     id: "/",
-    name: "WE-E",
-    short_name: "WE-E",
-    description: "WE-E · 深度角色扮演 Agent",
+    name: "Encore Flow",
+    short_name: "Encore Flow",
+    description: "Encore Flow · 深度角色扮演 Agent",
     start_url: "/?source=pwa",
     scope: "/",
     display: "standalone",

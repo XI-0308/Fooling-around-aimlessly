@@ -180,7 +180,7 @@ export default function LoginPage() {
     return (
       <LoginShell theme={theme}>
         <div className="card login-card auth-boot-card" role="status">
-          <h1 className="login-brand">WE-E</h1>
+          <h1 className="login-brand">Encore Flow</h1>
           <p className="auth-boot-hint">正在检查登录状态…</p>
         </div>
       </LoginShell>
@@ -190,7 +190,7 @@ export default function LoginPage() {
   return (
     <LoginShell theme={theme}>
       <div className="card login-card">
-        <h1 className="login-brand">WE-E</h1>
+        <h1 className="login-brand">Encore Flow</h1>
         {bootError ? (
           <>
             <p className="error">{bootError}</p>

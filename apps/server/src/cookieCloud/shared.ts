@@ -21,7 +21,7 @@ export async function fetchCookieCloudPayload(
   }
   if (!res.ok) {
     throw new Error(
-      "CookieCloud 解密失败：请确认扩展里的 UUID、密码、加密模式与 WE-E 设置完全一致，然后重新同步"
+      "CookieCloud 解密失败：请确认扩展里的 UUID、密码、加密模式与 Encore Flow 设置完全一致，然后重新同步"
     );
   }
   const data = (await res.json()) as CookieCloudPayload;
@@ -107,7 +107,7 @@ function describeMissingDomainCookies(
 
   if (hasLocal && bucketEmpty) {
     return (
-      `${label}：localStorage 已同步但 Cookie 为 0 条（WE-E 必须用 Cookie 登录）。` +
+      `${label}：localStorage 已同步但 Cookie 为 0 条（Encore Flow 必须用 Cookie 登录）。` +
       `请在 Edge 打开 ${site} 确认网页版已登录 → 扩展点「手动同步」；` +
       `仍不行则在设置里粘贴「手动 Cookie」备用`
     );

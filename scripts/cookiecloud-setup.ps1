@@ -1,4 +1,4 @@
-# CookieCloud setup: install deps, start PM2, write WE-E settings (Node patch)
+# CookieCloud setup: install deps, start PM2, write Encore Flow settings (Node patch)
 $ErrorActionPreference = "Stop"
 $Root = Split-Path -Parent $PSScriptRoot
 Set-Location $Root
@@ -37,6 +37,6 @@ Write-Host "  2. Paste URL / UUID / Password into extension settings"
 Write-Host "  3. Crypto mode: Fixed IV (aes-128-cbc-fixed)"
 Write-Host "  4. Log in to music.163.com and weread.qq.com"
 Write-Host "  5. Click Sync in the extension"
-Write-Host "  6. WE-E Settings -> CookieCloud -> Test connection"
+Write-Host "  6. Encore Flow Settings -> CookieCloud -> Test connection"
 Write-Host ""
 npx pm2 save | Out-Null

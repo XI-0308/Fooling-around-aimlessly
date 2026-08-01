@@ -66,7 +66,7 @@ function AppShellInner({ children, title }: { children: React.ReactNode; title: 
     return (
       <div className="login-page auth-boot-page" role="status">
         <div className="card login-card auth-boot-card">
-          <h1 className="login-brand">WE-E</h1>
+          <h1 className="login-brand">Encore Flow</h1>
           <p className="auth-boot-hint">加载中…</p>
         </div>
       </div>
@@ -77,7 +77,7 @@ function AppShellInner({ children, title }: { children: React.ReactNode; title: 
     return (
       <div className="login-page auth-boot-page">
         <div className="card login-card auth-boot-card">
-          <h1 className="login-brand">WE-E</h1>
+          <h1 className="login-brand">Encore Flow</h1>
           <p className="error">{error || "暂时连不上服务器"}</p>
           <p className="hint">网络恢复后点重试即可，不必退出桌面图标。</p>
           <button type="button" className="btn btn-outline" style={{ width: "100%" }} onClick={retry}>
@@ -102,7 +102,7 @@ function AppShellInner({ children, title }: { children: React.ReactNode; title: 
       )}
 
       <aside className={`sidebar${drawerOpen ? " sidebar-open" : ""}`}>
-        <div className="sidebar-brand"><span className="login-brand">WE-E</span></div>
+        <div className="sidebar-brand"><span className="login-brand">Encore Flow</span></div>
         <div className="sidebar-nav">
           <AppSidebarNav onNavigate={() => setDrawerOpen(false)} />
         </div>

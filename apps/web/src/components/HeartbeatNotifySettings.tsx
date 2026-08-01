@@ -59,7 +59,7 @@ export default function HeartbeatNotifySettings({ disabled }: { disabled?: boole
         preview: "这是一条前台测试通知：权限正常。",
       });
     } else if (p === "denied") {
-      setMsg("系统通知被拒绝。请到手机「设置 → 通知」里允许本站/WE-E。");
+      setMsg("系统通知被拒绝。请到手机「设置 → 通知」里允许本站/Encore Flow。");
     } else if (p === "unsupported") {
       setMsg("当前浏览器不支持通知。");
     } else {

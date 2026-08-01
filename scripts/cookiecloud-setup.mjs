@@ -9,7 +9,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const settingsPath = path.join(root, "data", "settings.json");
 
 if (!fs.existsSync(settingsPath)) {
-  console.error("[CookieCloud] data/settings.json not found. Log in to WE-E first.");
+  console.error("[CookieCloud] data/settings.json not found. Log in to Encore Flow first.");
   process.exit(1);
 }
 

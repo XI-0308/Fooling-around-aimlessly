@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""WE-E ↔ LEANN 桥接 CLI（stdout 输出 JSON）"""
+"""Encore Flow ↔ LEANN 桥接 CLI（stdout 输出 JSON）"""
 from __future__ import annotations
 
 import argparse
@@ -154,7 +154,7 @@ def cmd_search(args: argparse.Namespace) -> int:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="WE-E LEANN bridge")
+    parser = argparse.ArgumentParser(description="Encore Flow LEANN bridge")
     sub = parser.add_subparsers(dest="command", required=True)
 
     sub.add_parser("probe", help="检测 leann 是否可用")

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * 重置 WE-E 登录密码（写入 data/settings.json）
+ * 重置 Encore Flow 登录密码（写入 data/settings.json）
  * 用法：node scripts/reset-app-password.mjs "你的新密码"
  */
 import bcrypt from "bcryptjs";

@@ -81,7 +81,7 @@ export default function AntxShowcasePage() {
           <div className="antx-bubble-list-wrap">
             <Bubble.List
               items={[
-                { key: "1", role: "ai", content: "你好，我是 WE-E 里的角色。" },
+                { key: "1", role: "ai", content: "你好，我是 Encore Flow 里的角色。" },
                 { key: "2", role: "user", content: "这是用户侧气泡。" },
                 {
                   key: "3",
@@ -142,7 +142,7 @@ export default function AntxShowcasePage() {
         <Section name="Welcome" desc="空聊天页欢迎区。">
           <Welcome
             icon={<UserOutlined />}
-            title="WE-E"
+            title="Encore Flow"
             description="选一位角色开始对话，或从左侧继续历史聊天。"
           />
         </Section>
