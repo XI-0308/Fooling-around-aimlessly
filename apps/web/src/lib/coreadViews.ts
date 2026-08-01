@@ -13,7 +13,12 @@ export function coreadViewsPayload(views: CoreadViews): Record<string, string> {
   return { userView: views.userView, charView: views.charView };
 }
 
-export function normalizeSearchCoreadViews(hit: Record<string, unknown>): CoreadViews {
+export function normalizeSearchCoreadViews(hit: {
+  coreadUserView?: string;
+  coreadCharView?: string;
+  coreadXiView?: string;
+  coreadSuView?: string;
+}): CoreadViews {
   return {
     userView: String(hit.coreadUserView ?? hit.coreadXiView ?? ""),
     charView: String(hit.coreadCharView ?? hit.coreadSuView ?? ""),

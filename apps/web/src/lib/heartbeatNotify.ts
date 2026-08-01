@@ -1,6 +1,6 @@
 /** Heartbeat / 主动消息：角标 + 系统通知（页面存活时） */
 
-import { LEGACY_CHAR } from "./legacyNames.js";
+import { LEGACY_CHAR } from "./legacyNames";
 
 export const HEARTBEAT_NOTIFY_KEY = "ef_heartbeat_system_notify";
 export const HEARTBEAT_NOTIFY_ASKED_KEY = "ef_heartbeat_notify_asked";
