@@ -1,0 +1,30 @@
+{
+  "name": "rp-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "WE-E — deep companionship for one character",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:web\"",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:server": "npm run dev --workspace=apps/server",
+    "build": "npm run build --workspace=apps/web && npm run build --workspace=apps/server",
+    "start": "npm run start --workspace=apps/server",
+    "serve": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/serve.ps1",
+    "serve:prod": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/serve-prod.ps1",
+    "serve:stop": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/serve-stop.ps1",
+    "serve:restart": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/serve-restart.ps1",
+    "serve:rebuild": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/serve-rebuild.ps1",
+    "serve:status": "pm2 status",
+    "serve:logs": "pm2 logs --lines 80",
+    "serve:autostart": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install-autostart.ps1",
+    "cookiecloud:setup": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/cookiecloud-setup.ps1",
+    "leann:install": "pip install -r leann-bridge/requirements.txt"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "pm2": "^6.0.8"
+  }
+}

@@ -1,0 +1,25 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - APP_PASSWORD=${APP_PASSWORD:-changeme}
+      - SESSION_SECRET=${SESSION_SECRET:-please-change-this-secret}
+      - WEB_ORIGIN=http://localhost:3000
+    volumes:
+      - ./data:/app/data
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    ports:
+      - "3000:3000"
+    environment:
+      - API_URL=http://server:3001
+    depends_on:
+      - server

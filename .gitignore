@@ -1,0 +1,33 @@
+# Dependencies & build
+node_modules/
+**/dist/
+**/.next/
+.venv-leann/
+*.tsbuildinfo
+
+# Private runtime data — never commit
+data/*
+!data/.gitkeep
+!data/sample-character.json
+apps/data/
+
+# Secrets & env
+.env
+.env.*
+!.env.example
+apps/web/.env.local
+
+# Logs & local tooling
+*.log
+.DS_Store
+.cursor/
+.vscode/
+*.pem
+
+# CookieCloud local store
+services/cookiecloud-api/node_modules/
+services/cookiecloud-api/data/
+
+# PM2 / OS
+.pm2/
+Thumbs.db
